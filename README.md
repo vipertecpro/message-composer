@@ -1,4 +1,4 @@
-# Message Composer — native email and SMS composers for NativePHP Mobile
+# Message Composer for NativePHP — native email and SMS composers
 
 Open the system **email composer** and the system **SMS / iMessage composer**
 from PHP, pre-filled with recipients, a subject, a plain-text or **HTML body**
@@ -252,6 +252,6 @@ See the `CHANGELOG.md` file included with the package for the full version histo
 
 MIT — see the `LICENSE` file included with the package.
 
-vipertecpro is an independent developer. NativePHP, Laravel, Apple, Google, Firebase and other names are trademarks of their respective owners; this package is not affiliated with or endorsed by them.
+vipertecpro is an independent developer. NativePHP, Laravel, Apple, Google, Firebase and other names are trademarks of their respective owners; this package is not affiliated with or endorsed by them. iOS and Apple are trademarks of Apple Inc. Android, Google Play and Firebase are trademarks of Google LLC.
 
-Message Composer is a free plugin from vipertecpro.com, home of the paid plugins for NativePHP Mobile: Rich-Text Editor, Onboarding & Tours, Health Kit and Native Charts.
+Message Composer is a free plugin from vipertecpro.com, home of the paid plugins for NativePHP Mobile: Rich-Text Editor, Onboarding & Tours, Health Data and Native Charts.
