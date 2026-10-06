@@ -22,7 +22,7 @@ silently — the platforms do not allow it, and this plugin does not try.
 - 🧾 **Validation before the bridge** — bad addresses, phone numbers and missing files throw in PHP, never half-open a composer
 - 🔐 **No permissions** — nothing to declare, nothing for the user to approve
 - 📦 **Zero dependencies** — no third-party native libraries
-- 🍏 🤖 **iOS + Android** behind one PHP API
+- 📱 **iOS + Android** behind one PHP API
 
 ## Requirements
 
@@ -252,4 +252,6 @@ See the `CHANGELOG.md` file included with the package for the full version histo
 
 MIT — see the `LICENSE` file included with the package.
 
-Message Composer is a free plugin from vipertecpro.com, home of the paid NativePHP Mobile plugins Rich-Text Editor, Onboarding & Tours, Health Kit and Native Charts.
+vipertecpro is an independent developer. NativePHP, Laravel, Apple, Google, Firebase and other names are trademarks of their respective owners; this package is not affiliated with or endorsed by them.
+
+Message Composer is a free plugin from vipertecpro.com, home of the paid plugins for NativePHP Mobile: Rich-Text Editor, Onboarding & Tours, Health Kit and Native Charts.
