@@ -10,7 +10,21 @@
         }
     ],
     "homepage": "https://github.com/vipertecpro/message-composer",
-    "keywords": ["nativephp", "mobile", "email", "mail", "sms", "imessage", "composer", "attachments", "share"],
+    "support": {
+        "issues": "https://github.com/vipertecpro/message-composer/issues",
+        "source": "https://github.com/vipertecpro/message-composer"
+    },
+    "keywords": [
+        "nativephp",
+        "mobile",
+        "email",
+        "mail",
+        "sms",
+        "imessage",
+        "composer",
+        "attachments",
+        "share"
+    ],
     "require": {
         "php": "^8.4",
         "nativephp/mobile": "^4.0"
