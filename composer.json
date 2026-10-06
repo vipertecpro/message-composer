@@ -1,0 +1,51 @@
+{
+    "name": "vipertecpro/message-composer",
+    "description": "Native email and SMS composers with attachments and result events — hand-written Swift and Kotlin for NativePHP Mobile.",
+    "type": "nativephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vipertecpro",
+            "email": "vipertecpro@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/vipertecpro/message-composer",
+    "keywords": ["nativephp", "mobile", "email", "mail", "sms", "imessage", "composer", "attachments", "share"],
+    "require": {
+        "php": "^8.4",
+        "nativephp/mobile": "^4.0"
+    },
+    "suggest": {
+        "vipertecpro/photo-kit": "Shrink a photo with PhotoKit::compress() before attaching it to an email or message.",
+        "vipertecpro/image-cropper": "Crop a photo natively before attaching it."
+    },
+    "autoload": {
+        "psr-4": {
+            "Vipertecpro\\MessageComposer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vipertecpro\\MessageComposer\\MessageComposerServiceProvider"
+            ]
+        },
+        "nativephp": {
+            "manifest": "nativephp.json"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0|^4.0",
+        "laravel/framework": "^12.0|^13.0"
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

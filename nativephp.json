@@ -1,0 +1,89 @@
+{
+    "name": "vipertecpro/message-composer",
+    "version": "1.0.0",
+    "description": "Open the native email composer (to, cc, bcc, subject, plain or HTML body, attachments) and the native SMS / iMessage composer from PHP, and get a result event back — sent, saved, cancelled, failed or handed off. Hand-written Swift and Kotlin, no third-party libraries.",
+    "namespace": "MessageComposer",
+    "keywords": [
+        "email",
+        "mail",
+        "sms",
+        "imessage",
+        "mms",
+        "composer",
+        "attachments",
+        "contact",
+        "support",
+        "feedback"
+    ],
+    "category": "communication",
+    "license": "MIT",
+    "pricing": {
+        "type": "free"
+    },
+    "author": {
+        "name": "vipertecpro",
+        "email": "vipertecpro@gmail.com",
+        "url": "https://github.com/vipertecpro"
+    },
+    "homepage": "https://github.com/vipertecpro/message-composer",
+    "repository": "https://github.com/vipertecpro/message-composer",
+    "funding": [],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "icon": "resources/icon.png",
+    "bridge_functions": [
+        {
+            "name": "MessageComposer.Capabilities",
+            "android": "com.vipertecpro.plugins.message_composer.MessageComposerFunctions.Capabilities",
+            "ios": "MessageComposerFunctions.Capabilities",
+            "description": "Report whether this device can compose email, SMS, SMS attachments and SMS subjects"
+        },
+        {
+            "name": "MessageComposer.ComposeEmail",
+            "android": "com.vipertecpro.plugins.message_composer.MessageComposerFunctions.ComposeEmail",
+            "ios": "MessageComposerFunctions.ComposeEmail",
+            "description": "Open the native email composer, pre-filled; the outcome arrives as an EmailComposerClosed event"
+        },
+        {
+            "name": "MessageComposer.ComposeSms",
+            "android": "com.vipertecpro.plugins.message_composer.MessageComposerFunctions.ComposeSms",
+            "ios": "MessageComposerFunctions.ComposeSms",
+            "description": "Open the native SMS / iMessage composer, pre-filled; the outcome arrives as an SmsComposerClosed event"
+        }
+    ],
+    "android": {
+        "min_version": 29,
+        "permissions": [],
+        "repositories": [],
+        "dependencies": {
+            "implementation": []
+        },
+        "activities": [],
+        "services": [],
+        "receivers": [],
+        "providers": []
+    },
+    "ios": {
+        "min_version": "15.0",
+        "info_plist": {},
+        "dependencies": {
+            "swift_packages": [],
+            "pods": []
+        }
+    },
+    "assets": {
+        "android": [],
+        "ios": []
+    },
+    "secrets": [],
+    "events": [
+        "Vipertecpro\\MessageComposer\\Events\\EmailComposerClosed",
+        "Vipertecpro\\MessageComposer\\Events\\SmsComposerClosed"
+    ],
+    "service_provider": "Vipertecpro\\MessageComposer\\MessageComposerServiceProvider",
+    "hooks": {
+        "post_compile": "nativephp:message-composer:configure"
+    }
+}
