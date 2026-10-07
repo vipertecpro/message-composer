@@ -14,15 +14,15 @@ silently — the platforms do not allow it, and this plugin does not try.
 
 ## Features
 
-- ✉️ **Email composer** — to, cc, bcc, subject, plain or HTML body, any number of attachments
-- 💬 **SMS / iMessage composer** — recipients, body, photos and files (MMS / iMessage), subject where supported
-- 🔎 **Capabilities first** — know whether email, texting, attachments and subjects are available before showing a button
-- 📣 **Result events** — `EmailComposerClosed` and `SmsComposerClosed` with `sent`, `saved`, `cancelled`, `failed` or `handedOff`
-- 🛟 **Graceful fallback** — on iOS without a Mail account the email is handed to the default mail app as a `mailto:` link
-- 🧾 **Validation before the bridge** — bad addresses, phone numbers and missing files throw in PHP, never half-open a composer
-- 🔐 **No permissions** — nothing to declare, nothing for the user to approve
-- 📦 **Zero dependencies** — no third-party native libraries
-- 📱 **iOS + Android** behind one PHP API
+- **Email composer** — to, cc, bcc, subject, plain or HTML body, any number of attachments
+- **SMS / iMessage composer** — recipients, body, photos and files (MMS / iMessage), subject where supported
+- **Capabilities first** — know whether email, texting, attachments and subjects are available before showing a button
+- **Result events** — `EmailComposerClosed` and `SmsComposerClosed` with `sent`, `saved`, `cancelled`, `failed` or `handedOff`
+- **Graceful fallback** — on iOS without a Mail account the email is handed to the default mail app as a `mailto:` link
+- **Validation before the bridge** — bad addresses, phone numbers and missing files throw in PHP, never half-open a composer
+- **No permissions** — nothing to declare, nothing for the user to approve
+- **Zero dependencies** — no third-party native libraries
+- **iOS + Android** behind one PHP API
 
 ## Requirements
 
@@ -248,7 +248,7 @@ with the package for local setup, the project layout and how it works.
 
 See the `CHANGELOG.md` file included with the package for the full version history.
 
-## License
+## Licence
 
 MIT — see the `LICENSE` file included with the package.
 
