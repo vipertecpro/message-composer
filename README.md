@@ -200,6 +200,54 @@ A JS bridge is shipped at `resources/js/messageComposer.js` with `email()`,
 `sms()` and `capabilities()`. Results arrive as the same native events —
 subscribe with the `#nativephp` `On()` helper.
 
+## What you can build
+
+Message Composer is a building block: the email and SMS composers, attachments,
+capability checks and result events are done, and the product around them is
+yours. These ideas sit comfortably inside store policy because the person always
+reviews and sends the message themselves from the system composer. Nothing is
+sent silently, so nothing here is for bulk messaging, hidden sending or
+unsolicited marketing.
+
+**Support and service**
+
+- **Contact support with context.** A "Contact support" button that opens an email
+  addressed to your team with the app version, the order number and a log file
+  attached, so the person does not have to explain it from scratch.
+- **Bug-report and feedback screens.** Pre-fill the subject and a short template,
+  attach a screenshot, and let the person edit or cancel before sending.
+
+**Shops, bookings and invoicing**
+
+- **Share an invoice or receipt by email.** A freelancer or small shop app that
+  attaches the PDF and an HTML summary for the customer, with the owner reviewing
+  the draft first.
+- **"Your table is ready" or "Your order is ready" texts.** A host or counter app
+  that opens a pre-written text to a guest who gave their number for that
+  purpose. The staff member taps send.
+- **Appointment confirmations.** A clinic, salon or repair-shop app that opens a
+  confirmation text or email for the person at the desk to send. Do not put
+  sensitive details in a text.
+
+**Social and community**
+
+- **Invite a friend.** Open the composer with your invite text for one friend the
+  user picks. Do not collect contacts in the background or message people who
+  have not been chosen.
+- **Event and club organisers.** Open an email to a group the organiser has the
+  right to contact, with the agenda attached; they review the recipients and send.
+
+**Field work**
+
+- **Inspection and delivery reports.** A worker finishes a job and emails the
+  report with photos attached from the device. Shrink photos first with Photo Kit
+  if they are large.
+
+Because the user sends the message, the plugin can only tell you the outcome on
+iOS; Android reports `handedOff`. Receiving replies, tracking delivery, scheduling
+messages and sending from a server are not part of this plugin and need your own
+backend or email service.
+
 ## Limitations
 
 - **Android cannot report the outcome.** Mail and SMS apps do not tell the
