@@ -1,5 +1,7 @@
 # Message Composer for NativePHP — native email and SMS composers
 
+![Latest version](https://img.shields.io/packagist/v/vipertecpro/message-composer) ![Tests](https://img.shields.io/github/actions/workflow/status/vipertecpro/message-composer/tests.yml?branch=main&label=tests) ![PHP](https://img.shields.io/packagist/dependency-v/vipertecpro/message-composer/php) ![NativePHP Mobile](https://img.shields.io/packagist/dependency-v/vipertecpro/message-composer/nativephp%2Fmobile) ![Platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20Android-informational) ![Licence](https://img.shields.io/packagist/l/vipertecpro/message-composer) ![Downloads](https://img.shields.io/packagist/dt/vipertecpro/message-composer)
+
 Open the system **email composer** and the system **SMS / iMessage composer**
 from PHP, pre-filled with recipients, a subject, a plain-text or **HTML body**
 and **attachments** — then get a **result event** back when the composer
