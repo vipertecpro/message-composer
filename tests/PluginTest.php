@@ -157,7 +157,9 @@ describe('Documentation', function () {
     });
 
     it('keeps the README free of links', function () {
-        $readme = file_get_contents($this->pluginPath.'/README.md');
+        // The badge row under the title is the only place URLs are allowed;
+        // vipertecpro.com drops it from the product page.
+        $readme = preg_replace('/^(!\[[^\]]*\]\(https:\/\/img\.shields\.io\/[^\s)]+\) ?)+$/m', '', file_get_contents($this->pluginPath.'/README.md'));
 
         expect($readme)->not->toMatch('/\]\(/');
         expect($readme)->not->toMatch('/https?:\/\//');
